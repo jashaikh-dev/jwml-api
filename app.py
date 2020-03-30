@@ -11,3 +11,9 @@ def getSentiment():
   sentence = request.json['sentence']
   # you need to perform sentiment analysis here.
   return sentence 
+
+@app.route('/api/v1/gettaggedpartsofspeech', methods=['POST'])
+def getTaggedPartsOfSpeech():
+  sentence = request.json['sentence']
+  # you need to perform part of speech analysis and respond the client
+  return sentence
